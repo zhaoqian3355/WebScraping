@@ -6,7 +6,7 @@
             "type": "python",
             "request": "launch",
             "pythonPath": "${config.python.pythonPath}",
-            "program": "${file}",
+            "program": "/Users/zhaoqian/Documents/OpenSource/WebScraping/main.py",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
