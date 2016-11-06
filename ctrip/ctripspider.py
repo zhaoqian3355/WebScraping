@@ -8,3 +8,5 @@ response=urlopen(fightUrl)
 byteData=response.read()
 stringData=byteData.decode('gb2312')
 x=json.loads(stringData)
+
+lips=x["lips"]
