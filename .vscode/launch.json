@@ -7,11 +7,12 @@
             "request": "launch",
             "pythonPath": "${config.python.pythonPath}",
             "program": "${file}",
+            "cwd": "${workspaceRoot}",
             "debugOptions": [
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit",
                 "RedirectOutput"
             ]
         }
-    ]   
+    ]
 }
