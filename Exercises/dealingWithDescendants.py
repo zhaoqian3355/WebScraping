@@ -11,4 +11,6 @@ def PrintChild():
 def PrintParent():
     print(bsObj.find("img",{"src":"../img/gifts/img1.jpg"}).parent.previous_sibling.get_text());
 
-PrintParent();
+PrintParent()
+
+nums=[1,2,3,4]
