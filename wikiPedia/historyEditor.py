@@ -22,5 +22,42 @@ def getHistoryIPs(pageUrl):
     bsObj=BeautifulSoup(bsObj)
     # find only the links with class "mw-anonuserlink" which has ip address instead of usernames
     ipAddresses = bsObj.findAll("a", {"class":"mw-anonuserlink"})
-    addressLink=set()
+    addressList=set()
+    for ipAddresse in ipAddresses:
+        addressList.add(ipAddresse.get_text())
+
+    return addressList
+
+links=getLinks("/wiki/Python_(programming_language)")
+
+while len(links)>0:
+    for link in links:
+        print("-------------")
+        historyIPs=getHistoryIPs(link.attr["href"])
+        for historyIP in historyIPs:
+            print(historyIP)
     
+    newLink=links[random.randint(0,len(links)-1)].attrs["href"]
+    links=getLinks(newLink)
+
+def getCountry(ipAddress): 
+    try:
+        response = urlopen("http://freegeoip.net/json/"
+                               +ipAddress).read().decode('utf-8')
+    except HTTPError: 
+        return None
+    responseJson = json.loads(response) 
+    return responseJson.get("country_code")
+
+links = getLinks("/wiki/Python_(programming_language)")
+
+while(len(links) > 0): 
+    for link in links:
+        print("-------------------")
+        historyIPs = getHistoryIPs(link.attrs["href"]) 
+        for historyIP in historyIPs:
+            country = getCountry(historyIP) if country is not None:
+            print(historyIP+" is from "+country)
+        
+    newLink = links[random.randint(0, len(links)-1)].attrs["href"]
+    links = getLinks(newLink)    
