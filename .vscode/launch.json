@@ -5,7 +5,6 @@
             "name": "Python",
             "type": "python",
             "request": "launch",
-            "stopOnEntry": true,
             "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
             "cwd": "${workspaceRoot}",
