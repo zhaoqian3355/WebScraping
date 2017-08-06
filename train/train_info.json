@@ -1,0 +1,88 @@
+{
+    "validateMessagesShowId": "_validatorMessage",
+    "status": true,
+    "httpstatus": 200,
+    "data": {
+        "data": [
+            {
+                "start_station_name": "北京",
+                "arrive_time": "----",
+                "station_train_code": "D33",
+                "station_name": "北京",
+                "train_class_name": "动车",
+                "service_type": "1",
+                "start_time": "14:47",
+                "stopover_time": "----",
+                "end_station_name": "大连",
+                "station_no": "01",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "16:48",
+                "station_name": "北戴河",
+                "start_time": "16:50",
+                "stopover_time": "2分钟",
+                "station_no": "02",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "17:08",
+                "station_name": "秦皇岛",
+                "start_time": "17:15",
+                "stopover_time": "7分钟",
+                "station_no": "03",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "17:35",
+                "station_name": "山海关",
+                "start_time": "17:37",
+                "stopover_time": "2分钟",
+                "station_no": "04",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "18:19",
+                "station_name": "葫芦岛北",
+                "start_time": "18:20",
+                "stopover_time": "1分钟",
+                "station_no": "05",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "19:09",
+                "station_name": "盘锦",
+                "start_time": "19:11",
+                "stopover_time": "2分钟",
+                "station_no": "06",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "19:39",
+                "station_name": "营口东",
+                "start_time": "19:47",
+                "stopover_time": "8分钟",
+                "station_no": "07",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "20:06",
+                "station_name": "鲅鱼圈",
+                "start_time": "20:08",
+                "stopover_time": "2分钟",
+                "station_no": "08",
+                "isEnabled": true
+            },
+            {
+                "arrive_time": "21:04",
+                "station_name": "大连",
+                "start_time": "21:04",
+                "stopover_time": "----",
+                "station_no": "09",
+                "isEnabled": true
+            }
+        ]
+    },
+    "messages": [],
+    "validateMessages": {}
+}
