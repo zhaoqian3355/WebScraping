@@ -71,11 +71,15 @@ def getStationInfo():
 
 
 def getTrainStation(train_no, from_station, to_station, date):
-    # https://kyfw.12306.cn/otn/czxx/queryByTrainNo?train_no=240000K6810U&from_station_telecode=BJP&to_station_telecode=DLT&depart_date=2017-08-06
-    data = urlopen("https://kyfw.12306.cn/otn/czxx/queryByTrainNo?train_no={0}&from_station_telecode={1}&to_station_telecode={2}&depart_date={3}".format(
-        train_no, from_station, to_station, str(date)))
-    data = json.loads(data.read())
-    print(data)
+    try:
+        context=ssl._create_unverified_context()
+        req=Request("https://kyfw.12306.cn/otn/czxx/queryByTrainNo?train_no={0}&from_station_telecode={1}&to_station_telecode={2}&depart_date={3}".format(
+            '11000C100102', 'CCT', 'YXL', '2017-08-10'))
+        data = urlopen(req,context=context)
+        data = json.loads(data.read().decode())
+        print(data)
+    except Exception as ex:
+        print(ex)
 
 
 # for index, row in df.iterrows():
@@ -85,12 +89,4 @@ def getTrainStation(train_no, from_station, to_station, date):
 #     print(row.train_no)
 #     getTrainStation(row.train_no,row.from_station_telecode,row.to_station_telecode,today)
 
-try:
-    context=ssl._create_unverified_context()
-    req=Request("https://kyfw.12306.cn/otn/czxx/queryByTrainNo?train_no={0}&from_station_telecode={1}&to_station_telecode={2}&depart_date={3}".format(
-        '11000C100102', 'CCT', 'YXL', '2017-08-10'))
-    data = urlopen(req,context=context)
-    data = json.loads(data.read().decode())
-    print(data)
-except Exception as ex:
-    print(ex)
+
