@@ -1,17 +1,16 @@
-[INFO  - 2017-08-15T11:25:31.885Z] GhostDriver - Main - running on port 60549
-[INFO  - 2017-08-15T11:25:32.538Z] Session [73357250-81ac-11e7-a8fa-a5a688955c02] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-08-15T11:25:32.538Z] Session [73357250-81ac-11e7-a8fa-a5a688955c02] - page.customHeaders:  - {}
-[INFO  - 2017-08-15T11:25:32.538Z] Session [73357250-81ac-11e7-a8fa-a5a688955c02] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-08-15T11:25:32.538Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 73357250-81ac-11e7-a8fa-a5a688955c02
-[ERROR - 2017-08-15T11:26:03.884Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1502796363833
+[INFO  - 2017-08-16T14:10:12.577Z] GhostDriver - Main - running on port 59112
+[INFO  - 2017-08-16T14:10:12.726Z] Session [9eab0590-828c-11e7-9408-6d1d8746e954] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-16T14:10:12.726Z] Session [9eab0590-828c-11e7-9408-6d1d8746e954] - page.customHeaders:  - {}
+[INFO  - 2017-08-16T14:10:12.726Z] Session [9eab0590-828c-11e7-9408-6d1d8746e954] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-16T14:10:12.726Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9eab0590-828c-11e7-9408-6d1d8746e954
+[ERROR - 2017-08-16T14:10:36.249Z] Session [9eab0590-828c-11e7-9408-6d1d8746e954] - page.onError - msg: ReferenceError: Can't find variable: ue
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-08-15T11:26:04.857Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1502796364812
+[ERROR - 2017-08-16T14:10:36.253Z] Session [9eab0590-828c-11e7-9408-6d1d8746e954] - page.onError - stack:
+  (anonymous function) (https://www.amazon.com/War-Peace-Leo-Nikolayevich-Tolstoy/dp/1427030200:11192)
+  l (https://www.amazon.com/War-Peace-Leo-Nikolayevich-Tolstoy/dp/1427030200:11)
+  (anonymous function) (https://www.amazon.com/War-Peace-Leo-Nikolayevich-Tolstoy/dp/1427030200:12)
+  U (https://www.amazon.com/War-Peace-Leo-Nikolayevich-Tolstoy/dp/1427030200:15)
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-08-15T11:26:05.674Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1502796365626
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-08-15T11:26:06.499Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1502796366451
-
-  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-08-16T14:15:12.589Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
