@@ -54,6 +54,8 @@ class TestDrag(unittest.TestCase):
 
         self.assertEqual("You are definitely not a bot!",driver.find_element_by_id("message").text)
 
+        
+
 
 if __name__=='__main__':
     unittest.main()
