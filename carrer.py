@@ -2,10 +2,11 @@ from urllib.request import urlopen
 import requests
 import json
 import math
+import pandas as pd
 
 data={
     "Year":2017,
-    "Month":8
+    "Month":9
 }
 
 headers={
@@ -16,10 +17,13 @@ headers={
 }
 
 r = requests.post('http://career.dlut.edu.cn/dgjyw/jsp/CalendarEvent.jsp', data,headers=headers)
-url="http://career.dlut.edu.cn/dgjyw/jsp/Portal/News/NewsDtl/ZC17090137/ZC17090137.html?Stamp=1505321040493"
+url="http://career.dlut.edu.cn/dgjyw/jsp/Portal/News/NewsDtl/{0}/{1}.html"
 text=r.text.split("\b")[1:-1]
 result=[]
 pageCount=math.ceil(len(text)//3)
 for item in range(0,pageCount):
     result.append(text[item*3:(item+1)*3])
-print(result)
+df=pd.DataFrame(result,columns=["Date","Name","Code"])
+# df["Url"]=url.format(df["Code"],df["Code"])
+df.to_excel("company.xlsx",index=False)
+print(df)
